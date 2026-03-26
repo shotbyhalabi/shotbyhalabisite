@@ -47,9 +47,16 @@ export default function Hero() {
 
       {/* Social / Scroll hint elements */}
       <div className="absolute bottom-10 left-10 hidden lg:block">
-        <div className="flex flex-col gap-4 text-[#8C8C8C] text-[10px] tracking-[0.3em] uppercase">
-          <span className="hover:text-[#D62828] cursor-pointer transition-colors">Instagram</span>
-          <span className="hover:text-[#D62828] cursor-pointer transition-colors">TikTok</span>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4 text-[#8C8C8C] text-[10px] tracking-[0.3em] uppercase">
+            <span className="hover:text-[#D62828] cursor-pointer transition-colors">Instagram</span>
+            <span className="hover:text-[#D62828] cursor-pointer transition-colors">TikTok</span>
+          </div>
+          <div className="pt-4 border-t border-[#8C8C8C]/20">
+            <p className="text-[#8C8C8C]/40 text-[9px] tracking-[0.2em] font-medium uppercase">
+              Designed & Built by <span className="text-[#F5F5F5]/60 hover:text-[#D62828] transition-colors cursor-default">Sterling Web</span>
+            </p>
+          </div>
         </div>
       </div>
       
