@@ -1,3 +1,11 @@
+import Hero from "@/components/Hero";
+import CategoryCard from "@/components/CategoryCard";
+import Link from "next/link";
+import { getSportsCategories } from "@/lib/cloudinary";
+
+export default async function Home() {
+  const categories = await getSportsCategories();
+
   return (
     <div>
       <Hero />
