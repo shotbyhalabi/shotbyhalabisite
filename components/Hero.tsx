@@ -20,6 +20,13 @@ export default function Hero() {
             SHOT<span className="text-[#D62828]">BY</span>HALABI
           </h1>
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-[1px] bg-[#D62828]/50" />
+          
+          {/* Mobile Shout - Only visible on small screens */}
+          <div className="lg:hidden mt-8 opacity-40">
+            <p className="text-[#F5F5F5] text-[8px] tracking-[0.3em] uppercase font-medium">
+              Designed & Built by <span className="text-[#D62828]">Sterling Web</span>
+            </p>
+          </div>
         </div>
 
         <p className="text-[#8C8C8C] text-lg md:text-2xl font-light tracking-[0.15em] mb-12 max-w-2xl lowercase italic">
