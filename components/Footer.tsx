@@ -41,10 +41,11 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="mt-16 pt-8 border-t border-[#8C8C8C]/20 flex flex-col md:flex-row justify-between items-center text-xs text-[#8C8C8C]">
-          <div className="flex flex-col md:flex-row gap-2 md:gap-8 items-center">
-            <p>&copy; {currentYear} Shot By Halabi. All rights reserved.</p>
-            <p className="opacity-50">Made by <span className="text-[#F5F5F5]">Sterling Web</span></p>
+          <div className="flex flex-col md:flex-row gap-2 md:gap-8 items-center font-medium">
+            <p className="opacity-70">&copy; {currentYear} Shot By Halabi. All rights reserved.</p>
+            <p className="opacity-80 hover:opacity-100 transition-opacity">
+              Designed & Developed by <span className="text-[#F5F5F5] border-b border-[#D62828]/30">Sterling Web</span>
+            </p>
           </div>
           <div className="mt-4 md:mt-0 space-x-4">
             <p>Pictures cannot be used without explicit permission.</p>
