@@ -33,13 +33,22 @@ export default function Hero({ images }: HeroProps) {
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
         >
+          {/* Blurred Background */}
+          <Image
+            src={img}
+            alt=""
+            fill
+            className="object-cover blur-2xl opacity-40"
+            unoptimized={true}
+          />
+          {/* Main Image Contained */}
           <Image
             src={img}
             alt="Sports Photography Hero"
             fill
-            className="object-cover object-center"
+            className="object-contain"
             priority={index === 0}
-            unoptimized={true} // For external images temporarily until domains configured
+            unoptimized={true}
           />
           {/* Overlay to ensure text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/40 to-transparent" />

@@ -10,12 +10,22 @@ interface CategoryCardProps {
 export default function CategoryCard({ title, imageSrc, href }: CategoryCardProps) {
   return (
     <Link href={href} className="group relative block w-full aspect-[4/5] lg:aspect-video overflow-hidden bg-[#0F0F0F] rounded-xl shadow-xl">
+      {/* Blurred background to fill space without cropping */}
+      <Image
+        src={imageSrc}
+        alt=""
+        fill
+        className="object-cover blur-xl opacity-30 scale-110 transition-transform duration-700 group-hover:scale-125"
+        unoptimized={true}
+      />
+      
+      {/* Main image contained to ensure no part is cut out */}
       <Image
         src={imageSrc}
         alt={title}
         fill
         sizes="(max-width: 1024px) 100vw, 50vw"
-        className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+        className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-105"
         unoptimized={true}
       />
       
