@@ -80,12 +80,14 @@ export default function Lightbox({ images, initialIndex, isOpen, onClose }: Ligh
       </button>
 
       <div
-        className="relative w-full h-full max-w-6xl max-h-[90vh] mx-auto flex items-center justify-center p-4 outline-none"
+        className="relative w-full h-full max-w-6xl max-h-[90vh] mx-auto flex items-center justify-center p-4 outline-none select-none"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onClick={(e) => {
           if (e.target === e.currentTarget) onClose();
         }}
+        onContextMenu={(e) => e.preventDefault()}
+        style={{ WebkitTouchCallout: 'none' }}
         tabIndex={0}
       >
         {images.length > 0 && (
@@ -94,7 +96,7 @@ export default function Lightbox({ images, initialIndex, isOpen, onClose }: Ligh
               src={images[currentIndex]}
               alt={`Gallery Image ${currentIndex + 1}`}
               fill
-              className="object-contain"
+              className="object-contain pointer-events-none select-none"
               unoptimized={true}
               priority
             />
