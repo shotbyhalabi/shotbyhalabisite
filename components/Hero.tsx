@@ -30,19 +30,24 @@ export default function Hero({ images }: HeroProps) {
       {images.map((img, index) => (
         <div
           key={img}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out bg-[#0F0F0F] ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
         >
+          {/* Main Image Contained - NO CROPPING */}
           <Image
             src={img}
             alt="Sports Photography Hero"
             fill
-            className="object-cover object-center"
+            className="object-contain z-10"
             priority={index === 0}
             unoptimized={true}
           />
-          {/* Professional Overlay */}
-          <div className="absolute inset-0 bg-black/30 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/20 to-transparent" />
+          
+          {/* Cinematic Vignette Blend */}
+          <div className="absolute inset-0 z-20 bg-[radial-gradient(circle,_transparent_40%,_#0F0F0F_100%)] opacity-70" />
+          
+          {/* Bottom Gradient for text readability */}
+          <div className="absolute inset-x-0 bottom-0 h-1/2 z-20 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/40 to-transparent" />
         </div>
       ))}
 
