@@ -122,18 +122,14 @@ export default function ContactForm() {
         <label htmlFor="sport" className="block text-[#F5F5F5] text-sm uppercase font-medium tracking-wide mb-2">
           SPORT / EVENT TYPE
         </label>
-        <select
+        <input
+          type="text"
           id="sport"
           name="sport"
           required
-          className="w-full bg-[#0F0F0F] border border-[#8C8C8C]/50 rounded-md px-4 py-3 text-[#F5F5F5] focus:outline-none focus:border-[#D62828] focus:ring-1 focus:ring-[#D62828] transition-colors appearance-none"
-        >
-          <option value="" disabled selected>Select a sport...</option>
-          <option value="Volleyball">Volleyball</option>
-          <option value="Hockey">Hockey</option>
-          <option value="Basketball">Basketball</option>
-          <option value="Other">Other</option>
-        </select>
+          className="w-full bg-[#0F0F0F] border border-[#8C8C8C]/50 rounded-md px-4 py-3 text-[#F5F5F5] focus:outline-none focus:border-[#D62828] focus:ring-1 focus:ring-[#D62828] transition-colors"
+          placeholder="e.g. Volleyball Tournament, Team Headshots"
+        />
       </div>
 
       <div>

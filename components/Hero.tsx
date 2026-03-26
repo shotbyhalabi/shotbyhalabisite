@@ -8,19 +8,19 @@ export default function Hero() {
       {/* Background Texture/Grain for premium feel */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]" />
       
-      {/* Accent Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#D62828]/10 rounded-full blur-[120px] pointer-events-none" />
-
       <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 max-w-5xl">
-        <div className="mb-6 animate-fade-in-down">
-          <span className="text-[#D62828] font-medium uppercase tracking-[0.4em] text-xs md:text-sm">
+        <div className="mb-4 animate-fade-in-down">
+          <span className="text-[#D62828] font-medium uppercase tracking-[0.6em] text-[10px] md:text-xs">
             Photography & Creative Studio
           </span>
         </div>
         
-        <h1 className="font-bebas text-[15vw] md:text-[12vw] lg:text-[10vw] leading-[0.8] text-[#F5F5F5] uppercase tracking-tighter mb-8 drop-shadow-2xl">
-          SHOT<span className="text-[#D62828]">BY</span>HALABI
-        </h1>
+        <div className="relative mb-12">
+          <h1 className="font-bebas text-[15vw] md:text-[12vw] lg:text-[10vw] leading-[0.8] text-[#F5F5F5] uppercase tracking-tighter drop-shadow-2xl">
+            SHOT<span className="text-[#D62828]">BY</span>HALABI
+          </h1>
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-[1px] bg-[#D62828]/50" />
+        </div>
 
         <p className="text-[#8C8C8C] text-lg md:text-2xl font-light tracking-[0.15em] mb-12 max-w-2xl lowercase italic">
           capturing the intensity of the game
