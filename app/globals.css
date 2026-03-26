@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-bebas: var(--font-bebas), ui-sans-serif, system-ui, sans-serif;
+  
+  --color-background: #0F0F0F;
+  --color-foreground: #F5F5F5;
+  --color-brand-red: #D62828;
+  --color-brand-grey: #8C8C8C;
+}
+
+/* Custom base styles */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply font-sans;
+  }
+  
+  ::selection {
+    background-color: var(--color-brand-red);
+    color: white;
+  }
+}
+
