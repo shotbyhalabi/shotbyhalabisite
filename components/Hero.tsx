@@ -23,8 +23,8 @@ export default function Hero() {
           
           {/* Mobile Shout - Only visible on small screens */}
           <div className="lg:hidden mt-8 opacity-40">
-            <p className="text-[#F5F5F5] text-[8px] tracking-[0.3em] uppercase font-medium">
-              Designed & Built by <span className="text-[#D62828]">Sterling Web</span>
+            <p className="text-[#F5F5F5] text-[8px] tracking-[0.3em] uppercase font-medium underline underline-offset-4 decoration-[#D62828]/50">
+              Designed & Built by <a href="https://sterlingweb.co" target="_blank" rel="noopener noreferrer" className="text-[#D62828] hover:text-[#F5F5F5] transition-colors">Sterling Web</a>
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Hero() {
           </div>
           <div className="pt-4 border-t border-[#8C8C8C]/20">
             <p className="text-[#8C8C8C]/40 text-[9px] tracking-[0.2em] font-medium uppercase">
-              Designed & Built by <span className="text-[#F5F5F5]/60 hover:text-[#D62828] transition-colors cursor-default">Sterling Web</span>
+              Designed & Built by <a href="https://sterlingweb.co" target="_blank" rel="noopener noreferrer" className="text-[#F5F5F5]/60 hover:text-[#D62828] transition-colors cursor-pointer">Sterling Web</a>
             </p>
           </div>
         </div>

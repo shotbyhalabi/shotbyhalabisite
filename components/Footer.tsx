@@ -45,7 +45,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row gap-2 md:gap-8 items-center font-medium">
             <p className="opacity-70">&copy; {currentYear} Shot By Halabi. All rights reserved.</p>
             <p className="opacity-80 hover:opacity-100 transition-opacity">
-              Designed & Developed by <span className="text-[#F5F5F5] border-b border-[#D62828]/30">Sterling Web</span>
+              Designed & Developed by <a href="https://sterlingweb.co" target="_blank" rel="noopener noreferrer" className="text-[#F5F5F5] border-b border-[#D62828]/30 hover:text-[#D62828] transition-colors">Sterling Web</a>
             </p>
           </div>
           <div className="mt-4 md:mt-0 space-x-4">
